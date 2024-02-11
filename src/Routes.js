@@ -7,6 +7,9 @@ import Admin from './components/Admin';
 import Etudiant from './components/Etudiant';
 import Enseignant from './components/Enseignant';
 import App from './App';
+import ListeEnseignants from './components/Admin-side/ListeEnseignants';
+import { ModifierEnseignant, AjouterEnseignant } from './components/Admin-side/FormPage';
+import Details from './components/Admin-side/Details';
 
 
 const Routes = () => {
@@ -17,8 +20,10 @@ const Routes = () => {
       <Route path="/admin-page" element={<Admin />} />
       <Route path="/etudiant-page" element={<Etudiant />} />
       <Route path="/enseignant-page" element={<Enseignant />} />
-      {/* <Route path="/home" element={<Home />} />
-      Add more routes as needed */}
+      <Route path="/admin-page/enseignants" element={<ListeEnseignants/>} />
+      <Route path="/admin-page/ajouterEnseignant" element={<AjouterEnseignant />} />
+      <Route path="/admin-page/modifierEnseignant/:id" element={<ModifierEnseignant />} />
+      <Route path="/admin-page/enseignant/:id" element={<Details />} />
     </ReactRoutes>
   );
 };

@@ -1,19 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    color: #fff;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 
-body {
+
+#login-component{
   min-height: 100vh;
   background-image: url(../images/ubo.jpg);
   background-size: cover;
@@ -27,7 +16,7 @@ body {
 section {
   width: 100%;
   max-width: 420px;
-  min-height: 400px;
+  min-height: 350px;
   padding: 1rem;
   color: black;
   background-color: white;
@@ -48,7 +37,7 @@ a, a:visited {
     color: #fff;
 }
 
-input[type="email"],
+ input[type="email"],
 input[type="password"],
 input[type="text"],
 
@@ -57,11 +46,11 @@ textarea {
   font-size: 16px;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  width: 100%;
-  margin-top: 20px;
-}
+  width: 70%;
+  margin-top: 10px;
+} 
 
-button{
+#login{
   background-color: #ffdf00;
   font-size: 16px;
   font-weight: bold;
@@ -119,18 +108,10 @@ button{
     display: inline-block;
 }
 
-#logo{
+#logoLogin{
   width: 30%;
 }
 
 
-input {
-    /* Style par défaut */
-    border-color: #000000;
-    transition:  border-color 0.5s ease-in-out;
-  }
-  
-input.clicked {
-    /* Style après le clic */
-    border-color: #fcd706; /* Couleur de fond après le clic */
-  }
+
+   */

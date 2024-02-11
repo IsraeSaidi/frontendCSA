@@ -1,9 +1,9 @@
 import { useRef, useState, useEffect } from "react";
 import axios from "../api/axios";
 import { useNavigate } from 'react-router-dom';
+import '../style/login.css';
 
-
-const LOGIN_URL = "/login";
+const LOGIN_URL = "/auth/login";
 
 
 const Register = () => {
@@ -16,11 +16,8 @@ const Register = () => {
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
-    const [isClickedEmail, setIsClickedEmail] = useState(true);
+    
 
-    const handleButtonClick = () => {
-      setIsClickedEmail(true);
-    };
 
     useEffect(() => {
         userRef.current.focus();
@@ -82,7 +79,7 @@ const Register = () => {
     }
 
     return (
-        <>
+        <div id="login-component">
             {success ? (
                 <section>
                     <h1>Success!</h1>
@@ -93,17 +90,16 @@ const Register = () => {
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <img id="logo" src={require('../images/logo-ubo.jpg')} />
+                    <img id="logoLogin" src={require('../images/bretagne.png')} />
                     <form onSubmit={handleSubmit}>
-
-                        <input
+                        <div id="inputs">
+                        <input 
                             type="email"
                             id="email"
                             ref={userRef}
                             placeholder="Email"
                             autoComplete="off"
-                            className={isClickedEmail ? 'clicked' : ''}
-                            onClick={handleButtonClick}
+                            className="input"
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
                             required
@@ -112,28 +108,35 @@ const Register = () => {
                            
                         />
                     
-                        <input
+                        <input 
                             type="password"
                             id="password"
                             placeholder="Mot de passe"
                             onChange={(e) => setPassword(e.target.value)}
                             value={password}
+                            className="input"
                             required
                             aria-describedby="pwdnote"
                            
                         />
+                        </div>
                 
 
 
-                        <button>
-                            Login
+                        <button id="login">
+                            Se connecter
                         </button>
+                        <hr></hr>
+                        <p className="warning">Ne complétez jamais un formulaire d'authentification dont l'adresse paraît suspecte. En cas de doute, contactez l'assistance informatique.</p>
+                        <p className="warning">Déconnectez-vous et fermez votre navigateur lorsque vous avez fini d'accéder aux services authentifiés.</p>
+
 
                     </form>
 
                 </section>
+              
             )}
-        </>
+        </div>
     )
 }
 

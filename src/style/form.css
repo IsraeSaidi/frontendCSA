@@ -1,0 +1,58 @@
+#formComponent {
+  min-height: 100vh;
+  background-image: url(../images/ubo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#titre{
+  text-align: center;
+}
+#formulaire {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+.input {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  border-color: #ffdc2b;
+}
+
+#button {
+  grid-column: span 2;
+  background-color: #ffdc2b;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#button:hover {
+  background-color: #0e0d0d;
+}
+
+.label-large {
+  grid-column: span 2;
+}
+

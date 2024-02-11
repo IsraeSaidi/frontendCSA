@@ -1,19 +1,17 @@
-body{
+#body-component{
   min-height: 100vh;
   background-image: url(../images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 100px;
-
 }
 .card-list {
+  margin-left: 50px;
     display: flex;
-    justify-content: flex-start; /* Aligner les cartes à gauche */
+    justify-content: flex-start; 
     align-items: center;
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si nécessaire */
+    flex-wrap: wrap; 
   }
   
-  /* Card.css */
 .card-container {
   width: 300px;
   border: 1px solid #ddd;
@@ -51,15 +49,14 @@ body{
 
 
 img {
-  max-width: 100px;
   display: block;
-  margin: 0 auto; /* Centrer l'image à l'intérieur de la carte */
+  margin: 0 auto; 
 }
 
-button {
+.btn{
   position: absolute;
   bottom: 0;
-  width: 100%; /* La même largeur que la carte */
+  width: 100%; 
   padding: 12px;
   background-color: #c9c3c3;
   color: #fff;

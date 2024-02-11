@@ -1,0 +1,73 @@
+
+body{
+    margin: 0px;
+}
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .connexion-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 90px; /* Ajustez la taille de votre logo selon vos besoins */
+    height: auto;
+    position: absolute;
+   
+
+  }
+
+  #ent {
+    margin-left: 120px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: inherit;
+    position: absolute;
+    color: rgb(233, 232, 232);
+    
+  }
+
+  #connexion{
+    background-color: black;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .navbarJaune {
+    background-color:#ffdc2b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    color: black;
+    
+  }
+
+  #acc{
+    color: black;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }

@@ -1,0 +1,87 @@
+#containerEns {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ccab04;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+   
+  }
+
+  /* Liste.css */
+
+/* Style for action buttons */
+.btnModifier {
+    background-color: #eedf0a; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the buttons */
+    margin: 5px; /* Margin between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .btnSupprimer {
+    background-color: #a10606; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the buttons */
+    margin: 5px; /* Margin between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .btnVoir {
+    background-color: #000000; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the buttons */
+    margin: 5px; /* Margin between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .ajouter-btn {
+    background-color: #030303; /* Blue background color */
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* Align to the right within the flex container */
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .ajouter-btn:hover{
+    background-color: #797575; /* Blue background color */
+  }
+  .btnVoir:hover{
+    background-color: #797575; /* Blue background color */
+  }
+  .btnSupprimer:hover{
+    background-color: #da7272; 
+  }
+  .btnModifier:hover{
+    background-color: #f3ea69; 
+    color: #000000;
+  }
+
+
+ 
